@@ -1,4 +1,7 @@
-.crystal-image {
-    width: 300px;
-    height: 300px;
-  }
+body {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+}
+#mid {
+  padding-bottom: 15px;
+}

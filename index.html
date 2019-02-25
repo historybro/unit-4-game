@@ -1,24 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Game</title>       
+    <title>Crystal Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">    
-    
-</head>
-<body>
-    <div class="jumbotron">The Crystal Game</div>
-    <h1>Wins:<span id="wins"></span></h1>
-    <h1>Loss:<span id="loss"></span></h1>
-    <h1>Score:<span id="score"></span></h1>
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>        
-    <div id="crystals"></div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: auto;">
+                <div class="card-header">Welcome to the Crystal Game</div>
+                <div class="card-body">
+                    <h5 class="card-title">The Rules are simple</h5>
+                    <p class="card-text">
+                        You will be given a number at the start of the game.<br>
+                        Your goal is to make your score match that starting number.<br>
+                        Clicking on a crystal will give you points, the value of each is hidden.<br>
+                        If you go over the original number you will lose.<br>
+                        Each time a new game starts the values change for everything.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="mid">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <img id="crystal1" class="crystal-image rounded" src="assets/images/gem1.png" alt="crystals" />
+            </div>
+            <div class="col-md-1">
+                <img id="crystal2" class="crystal-image rounded" src="assets/images/gem2.png" alt="crystals" />
+            </div>
+            <div class="col-md-1">
+                <img id="crystal3" class="crystal-image rounded" src="assets/images/gem3.png" alt="crystals" />
+            </div>
+            <div class="col-md-1">
+                <img id="crystal4" class="crystal-image rounded" src="assets/images/gem4.png" alt="crystals" />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Score:</h5>
+                        <p class="card-text" id="score"></p>
+                    </div>
+                </div>
+                <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Wins:</h5>
+                        <p class="card-text" id="wins"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Number to Guess:</h5>
+                        <p class="card-text" id="number-to-guess"></p>
+                    </div>
+                </div>
+                <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Losses:</h5>
+                        <p class="card-text" id="loss"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
